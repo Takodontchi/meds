@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [searchTerms, setSearchTerms] = useState([]);
@@ -78,6 +79,15 @@ function App() {
         </button>
       </div>
     </div>
+  );
+
+  return (
+  <div className="App">
+    <h1>Search for Medications</h1>
+    {/* ... existing search functionality */}
+
+    <Link to="/medications-table">View Medications Table</Link>
+  </div>
   );
 }
 

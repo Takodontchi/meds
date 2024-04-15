@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import App from './App';
-import MedsTable from './MedicationsTable';
+import MedicationsTable from './MedicationsTable';
 
 function AppRouter() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/medications-table" component={MedsTable} />
+        <Route path="/medications-table" component={MedicationsTable} />
       </Switch>
     </Router>
   );
