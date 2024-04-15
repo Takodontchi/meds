@@ -7,6 +7,11 @@ function App() {
   const [drugName, setDrugName] = useState('');
   const [strength, setStrength] = useState('');
   const [form, setForm] = useState('');
+  const handleSearch = () => {
+    // Add your search functionality here
+    console.log('Search button clicked');
+  };
+  
 
   // Fetch autocomplete suggestions from the API
   useEffect(() => {
