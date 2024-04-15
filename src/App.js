@@ -8,11 +8,6 @@ function App() {
   const [drugName, setDrugName] = useState('');
   const [strength, setStrength] = useState('');
   const [form, setForm] = useState('');
-  const handleSearch = () => {
-    // Add your search functionality here
-    console.log('Search button clicked');
-  };
-  
 
   // Fetch autocomplete suggestions from the API
   useEffect(() => {
@@ -72,22 +67,9 @@ function App() {
             <option key={index} value={term.form} />
           ))}
         </datalist>
-
-        {/* Add a search button or functionality here */}
-        <button onClick={handleSearch}>
-          Search
-        </button>
+        <Link to="/medications-table">View Medications Table</Link>
       </div>
     </div>
-  );
-
-  return (
-  <div className="App">
-    <h1>Search for Medications</h1>
-    {/* ... existing search functionality */}
-
-    <Link to="/medications-table">View Medications Table</Link>
-  </div>
   );
 }
 
