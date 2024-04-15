@@ -68,7 +68,7 @@ function App() {
         </datalist>
 
         {/* Add a search button or functionality here */}
-        <button onClick={() => /* Add search functionality */}>
+        <button onClick={handleSearch}>
           Search
         </button>
       </div>
