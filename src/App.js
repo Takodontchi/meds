@@ -21,7 +21,6 @@ function App() {
         console.error('Error fetching autocomplete suggestions:', error);
       }
     };
-
     fetchAutocompleteSuggestions(`${drugName} ${strength} ${form}`);
   }, [drugName, strength, form]);
 
@@ -41,7 +40,6 @@ function App() {
             <option key={index} value={term.drugName} />
           ))}
         </datalist>
-
         <input
           type="text"
           value={strength}
@@ -54,7 +52,6 @@ function App() {
             <option key={index} value={term.strength} />
           ))}
         </datalist>
-
         <input
           type="text"
           value={form}
@@ -67,7 +64,9 @@ function App() {
             <option key={index} value={term.form} />
           ))}
         </datalist>
-        <Link to="/medications-table">View Medications Table</Link>
+        <div className="nav-link">
+          <Link to="/medications-table">View Medications Table</Link>
+        </div>
       </div>
     </div>
   );
