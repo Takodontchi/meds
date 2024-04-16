@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import App from './App';
+import App from '../App';
 import MedicationsTable from './MedicationsTable';
 
 function AppRouter() {
