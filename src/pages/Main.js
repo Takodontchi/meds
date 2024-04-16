@@ -16,7 +16,14 @@ const SearchContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
+`;
+
+const SearchTextArea = styled.textarea`
+  width: 80%;
+  height: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
 `;
 
 const Main = () => {
@@ -61,7 +68,7 @@ const Main = () => {
     <Container>
       <h1>Medication Search</h1>
       <SearchContainer>
-        <textarea
+        <SearchTextArea
           value={searchInput}
           onChange={handleSearchInput}
           placeholder="Enter search terms (press Enter to add a new line)"
